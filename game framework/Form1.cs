@@ -12,6 +12,7 @@ namespace game_framework
 {
     public partial class Form1 : Form
     {
+        game g;
         public Form1()
         {
             InitializeComponent();
@@ -19,12 +20,13 @@ namespace game_framework
 
         private void tick(object sender, EventArgs e)
         {
-            update();
+            g.update();
         }
-        public void update()
-        {
-            game g = new game(5);
+               
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            g = new game(5);
             gameObject obj1 = new gameObject(enemy1);
             gameObject obj2 = new gameObject(enemy2);
 

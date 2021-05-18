@@ -71,6 +71,7 @@ namespace game_framework
             this.Controls.Add(this.enemy1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
             this.ResumeLayout(false);

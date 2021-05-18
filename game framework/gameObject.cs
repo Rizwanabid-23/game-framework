@@ -17,9 +17,16 @@ namespace game_framework
             pic.Visible = true;
             this.box = pic;
         }
+        public gameObject()
+        {
+        }
         public PictureBox return_picturebox()
         {
             return this.box;
+        }
+        public void fall(int speed,PictureBox pic)
+        {
+            pic.Top=pic.Top + speed;
         }
     }
 }
