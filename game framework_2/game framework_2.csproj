@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="game.cs" />
     <Compile Include="gameObject.cs" />
+    <Compile Include="keyBoard.cs" />
     <Compile Include="movedown.cs" />
     <Compile Include="moveleft.cs" />
     <Compile Include="movement.cs" />

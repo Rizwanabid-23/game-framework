@@ -13,8 +13,8 @@ namespace game_framework_2
     {
         PictureBox box;
         int speed;
-        movement move;
-        public gameObject(PictureBox pic,int speed,movement movement)
+        Imovement move;
+        public gameObject(PictureBox pic,int speed,Imovement movement)
         {
             pic.BackColor = Color.Red;
             pic.Visible = true;
@@ -23,33 +23,38 @@ namespace game_framework_2
             this.speed = speed;
             this.move = movement;
         }
+
         public gameObject()
         {
-
         }
 
-        public PictureBox return_picturebox()
+        public gameObject(PictureBox pic,int speed)
         {
-            return this.box;
+            pic.BackColor = Color.Black;
+            this.box = pic;
+            this.speed = speed;
+            this.box.Left = this.box.Left - this.speed;
         }
-        public int return_speed()
-        {
-            return this.speed;
-        }
-        public movement return_move()
-        {
-            return this.move;
-        }
+
         public void fall(gameObject go)
         {
             PictureBox pic;
             int speed;
-            movement move;
+            Imovement move;
 
-            pic = go.return_picturebox();
-            speed = go.return_speed();
-            move = go.return_move();
-            move.move(speed, pic);
+            pic = go.box;
+            speed = go.speed;
+            if(go.move!=null)
+            {
+                move = go.move;
+                move.move(speed, pic);
+            }
+            else
+            {
+                moveleft left = new moveleft();
+                left.move(speed, pic);
+            }
+            
         }
     
     }

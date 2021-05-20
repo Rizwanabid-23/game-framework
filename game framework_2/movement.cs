@@ -8,12 +8,10 @@ using System.Windows.Forms;
 
 namespace game_framework_2
 {
-    class movement
+    interface Imovement
     {
-        public virtual void move(int speed,PictureBox pic)
-        {
-
-        }
+        void move(int speed, PictureBox pic);
+        
     }
     
 }

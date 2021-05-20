@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace game_framework_2
 {
-    class moveleft:movement
+    class moveleft:Imovement
     {
-        public override void move(int speed, PictureBox pic)
+        public void move(int speed, PictureBox pic)
         {
             pic.Left = pic.Left - speed;
         }
