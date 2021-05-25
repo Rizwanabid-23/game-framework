@@ -11,6 +11,21 @@ namespace game_framework_2
 {
     public partial class Form1 : Form
     {
+        /*                  //could not make form1 singleton because main program class is static.
+        private Form1()
+        {
+        }
+        private static Form1 Instance = null;
+        public static Form1 getInstance()
+        {
+            if(Instance==null)
+            {
+                Instance = new Form1();
+            }
+            return Instance;
+        }
+        */
+
         game g;
         factory f = new factory();
 
@@ -28,13 +43,17 @@ namespace game_framework_2
         private void Form1_Load_1(object sender, EventArgs e)
         {
             g = game.getInstance();
-            gameObject obj1 = factory.makeGameObject(enemy1, 2,f.left(),Char_types.enemy);
-            gameObject obj2 = factory.makeGameObject(enemy2, 3,Char_types.enemy);
-            gameObject obj3 = factory.makeGameObject(enemy3, 4, f.keyboard(),Char_types.hero);
+            gameObject obj1 = f.makeGameObject(enemy1, 2,f.left(),Char_types.enemy);
+            gameObject obj2 = f.makeGameObject(enemy2, 3,Char_types.enemy);
+            gameObject obj3 = f.makeGameObject(hero1, 4, f.keyboard(),Char_types.hero);
+            gameObject obj4 = f.makeGameObject(hero2, 8, f.right(), Char_types.hero);
 
             g.addObject(obj1); //sending objects to be stored in array
             g.addObject(obj2);
             g.addObject(obj3);
+            g.addObject(obj4);
+
+            f.calculate_charac_types();     //calculte enemies and heroes at this moment
         }
 
         keyBoard keyBoard = new keyBoard();
