@@ -22,7 +22,7 @@ namespace game
         private void Form1_Load(object sender, EventArgs e)
         {
             g = game_framework_2.game.getInstance();
-            gameObject obj1 = f.makeGameObject(enemy01, 3,f.down() ,char_types.hero);
+            gameObject obj1 = f.makeGameObject(enemy01, 3,new keyBoard() ,char_types.enemy);
             gameObject obj2 = f.makeGameObject(player01, 4, f.keyboard(), char_types.hero);
 
             
