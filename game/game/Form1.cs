@@ -22,18 +22,20 @@ namespace game
         private void Form1_Load(object sender, EventArgs e)
         {
             g = game_framework_2.game.getInstance();
-            gameObject obj1 = f.makeGameObject(enemy01, 3,f.down() ,char_types.enemy);
+            gameObject obj1 = f.makeGameObject(enemy01, 3,f.down() ,char_types.hero);
             gameObject obj2 = f.makeGameObject(player01, 4, f.keyboard(), char_types.hero);
 
             
             g.addObject(obj1);
             g.addObject(obj2);
-            
+
+            f.calculate_charac_types();
         }
 
         private void tick(object sender, EventArgs e)
         {
             g.update();
+            updateChracters();
         }
 
         keyBoard k = new keyBoard();
@@ -45,6 +47,10 @@ namespace game
         private void keyUp(object sender, KeyEventArgs e)
         {
             k.notmove(sender, e);
+        }
+        private void updateChracters()
+        {
+            charactersUpdate.Text = "Enemies: " + f.getEnemies() + "  Player: " + f.getHeroes();
         }
     }
 }

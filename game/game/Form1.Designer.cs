@@ -33,6 +33,7 @@ namespace game
             this.enemy01 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.player01 = new System.Windows.Forms.PictureBox();
+            this.charactersUpdate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.enemy01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player01)).BeginInit();
             this.SuspendLayout();
@@ -60,11 +61,21 @@ namespace game
             this.player01.TabIndex = 0;
             this.player01.TabStop = false;
             // 
+            // charactersUpdate
+            // 
+            this.charactersUpdate.AutoSize = true;
+            this.charactersUpdate.Location = new System.Drawing.Point(21, 16);
+            this.charactersUpdate.Name = "charactersUpdate";
+            this.charactersUpdate.Size = new System.Drawing.Size(35, 13);
+            this.charactersUpdate.TabIndex = 1;
+            this.charactersUpdate.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.charactersUpdate);
             this.Controls.Add(this.player01);
             this.Controls.Add(this.enemy01);
             this.Name = "Form1";
@@ -75,6 +86,7 @@ namespace game
             ((System.ComponentModel.ISupportInitialize)(this.enemy01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player01)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +95,7 @@ namespace game
         private System.Windows.Forms.PictureBox enemy01;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox player01;
+        private System.Windows.Forms.Label charactersUpdate;
     }
 }
 
