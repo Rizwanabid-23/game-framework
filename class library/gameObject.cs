@@ -54,12 +54,6 @@ namespace game_framework_2
                 left.move(speed, pic);
             }
             
-        }
-        ~gameObject()
-        {
-
-        }
-    
-    
+        } 
     }
 }
