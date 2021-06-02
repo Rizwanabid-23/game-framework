@@ -29,7 +29,6 @@ namespace game_framework_2
 
         internal gameObject(PictureBox pic,int speed,char_types types)
         {
-            pic.BackColor = Color.Black;
             this.box = pic;
             this.types = types;
             this.speed = speed;

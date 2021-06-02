@@ -7,12 +7,15 @@ using System.Windows.Forms;
 
 namespace game_framework_2
 {
-    public class moveleft:Imovement
+    internal class moveleft:Imovement
     {
         public void move(int speed, PictureBox pic)
         {
             pic.Left = pic.Left - speed;
-            
+        }
+        public MoveTypes getMoveType()
+        {
+            return MoveTypes.left;
         }
     }
 }

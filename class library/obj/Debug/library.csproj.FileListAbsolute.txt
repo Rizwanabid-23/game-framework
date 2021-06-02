@@ -1,10 +1,10 @@
-D:\semester2\OOP\week14\game Framework\class library\bin\Debug\game framework_2.dll.config
-D:\semester2\OOP\week14\game Framework\class library\bin\Debug\game framework_2.dll
 D:\semester2\OOP\week14\game Framework\class library\bin\Debug\game framework_2.pdb
-D:\semester2\OOP\week14\game Framework\class library\obj\Debug\library.csprojAssemblyReference.cache
 D:\semester2\OOP\week14\game Framework\class library\obj\Debug\game_framework_2.Form1.resources
 D:\semester2\OOP\week14\game Framework\class library\obj\Debug\game_framework_2.Properties.Resources.resources
 D:\semester2\OOP\week14\game Framework\class library\obj\Debug\library.csproj.GenerateResource.cache
 D:\semester2\OOP\week14\game Framework\class library\obj\Debug\library.csproj.CoreCompileInputs.cache
-D:\semester2\OOP\week14\game Framework\class library\obj\Debug\game framework_2.dll
 D:\semester2\OOP\week14\game Framework\class library\obj\Debug\game framework_2.pdb
+D:\semester2\OOP\week14\game Framework\class library\bin\Debug\game framework_2.exe.config
+D:\semester2\OOP\week14\game Framework\class library\bin\Debug\game framework_2.exe
+D:\semester2\OOP\week14\game Framework\class library\obj\Debug\game framework_2.exe
+D:\semester2\OOP\week14\game Framework\class library\obj\Debug\library.csprojAssemblyReference.cache

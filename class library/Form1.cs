@@ -28,6 +28,7 @@ namespace game_framework_2
 
         game g;
         factory f = new factory();
+        factoryMovement fm = new factoryMovement();
 
         public Form1()
         {
@@ -41,17 +42,18 @@ namespace game_framework_2
         private void Form1_Load_1(object sender, EventArgs e)
         {
             g = game.getInstance();
-            gameObject obj1 = f.makeGameObject(enemy1, 2, f.left(), char_types.enemy);
+            gameObject obj1 = f.makeGameObject(enemy1, 2, fm.getMovement(MoveTypes.down), char_types.enemy);
             gameObject obj2 = f.makeGameObject(enemy2, 3, char_types.enemy);
-            gameObject obj3 = f.makeGameObject(hero1, 4, f.keyboard(), char_types.hero);
+            gameObject obj3 = f.makeGameObject(hero1, 4, fm.getMovement(MoveTypes.keyboard), char_types.hero);
 
-            gameObject obj4 = new gameObject(hero2, 8, f.right(), char_types.hero);
+            gameObject obj4 = f.makeGameObject(hero2, 8, fm.getMovement(MoveTypes.left), char_types.hero);
             g.addObject(obj1); //sending objects to be stored in array
             g.addObject(obj2);
             g.addObject(obj3);
             g.addObject(obj4);
 
             f.calculate_charac_types();     //calculte enemies and heroes at this moment
+           
         }
 
         keyBoard keyBoard = new keyBoard();
@@ -69,7 +71,6 @@ namespace game_framework_2
         {            
             characterCounters.Text = "Enemies:" + f.getEnemies() + " Heroes:" +f.getHeroes();
         }
-
-        
+       
     }
 }

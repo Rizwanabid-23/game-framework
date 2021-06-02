@@ -30,26 +30,6 @@ namespace game_framework_2
             return gameObject;
         }
 
-        public Imovement left()
-        {           
-            return new moveleft();
-        }
-        public Imovement right()
-        {            
-            return new moveright();
-        }
-        public Imovement up()
-        {           
-            return new moveup();
-        }
-        public Imovement down()
-        {   
-            return new movedown();
-        }
-        public Imovement keyboard()
-        {
-            return new keyBoard();
-        }
         public void calculate_charac_types()
         {
             foreach(char_types t in character_array)

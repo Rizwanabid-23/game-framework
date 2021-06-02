@@ -34,6 +34,10 @@ namespace game_framework_2
                 pic.Top = pic.Top + speed;
             }
         }
+        public MoveTypes getMoveType()
+        {
+            return MoveTypes.keyboard;
+        }
         
         public void kmove(object sender,KeyEventArgs e)
         {

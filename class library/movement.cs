@@ -10,6 +10,9 @@ namespace game_framework_2
 {
     public interface Imovement
     {
-        void move(int speed, PictureBox pic);       
+        void move(int speed, PictureBox pic);
+
+        MoveTypes getMoveType();
     }
+   
 }

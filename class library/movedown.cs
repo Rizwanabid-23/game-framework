@@ -7,11 +7,15 @@ using System.Windows.Forms;
 
 namespace game_framework_2
 {
-    public class movedown:Imovement
+    internal class movedown:Imovement
     {
         public void move(int speed, PictureBox pic)
         {
             pic.Top = pic.Top + speed;
+        }
+        public MoveTypes getMoveType()
+        {
+            return MoveTypes.down;
         }
     }
 }
