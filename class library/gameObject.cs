@@ -55,6 +55,11 @@ namespace game_framework_2
             }
             
         }
+        ~gameObject()
+        {
+
+        }
+    
     
     }
 }

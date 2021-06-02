@@ -12,11 +12,12 @@ namespace game_framework_2
         
         int enemyCount, heroCount;
         ArrayList character_array = new ArrayList();
+        factoryMovement fm = new factoryMovement();
 
-        public gameObject makeGameObject(PictureBox pic,int speed, Imovement move,char_types types)
+        public gameObject makeGameObject(PictureBox pic,int speed, MoveTypes move,char_types types)
         {
             
-            gameObject gameObject=new gameObject(pic,speed,move,types);
+            gameObject gameObject=new gameObject(pic,speed,fm.getMovement(move),types);
             character_array.Add(types);
             
             return gameObject;
