@@ -1,85 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="game_framework_2.factory">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="game_framework_2.CollosionDetection">
+    <Position X="7.75" Y="3" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAISAAAEAAAAACAAAAIIAAAAAAAABwAAgAA=</HashCode>
+      <HashCode>AAAABAAAACAAAAAAAAAAAAABAAEAAAAIgAAAAAAAAAA=</HashCode>
+      <FileName>CollosionDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="game_framework_2.decreaseHP" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAQAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>decreaseHP.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="game_framework_2.factory" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIQACAEAAAAACAAAAIAAAAAAAAABQAAAAA=</HashCode>
       <FileName>factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="game_framework_2.Form1" Collapsed="true">
-    <Position X="0.5" Y="1" Width="1.5" />
+  <Class Name="game_framework_2.factoryMovement" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAzAEAAAACAAAAAAAACAMAACAAAAAQAYAAABAAAAAAI=</HashCode>
+      <HashCode>EAAQAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>factoryMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="game_framework_2.Form1" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgzAEAAAACQAAAAAAACAMAACAAAAAQAYAAABAAAAAAI=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="game_framework_2.game">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+  <Class Name="game_framework_2.game" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQBQAAAAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQAAAEAAACAAAAAQQJQAAAAAAEAAA=</HashCode>
       <FileName>game.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="game_framework_2.gameObject">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="game_framework_2.gameObject" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAgAAAAAIAQAAAAAAAAIAAAA=</HashCode>
       <FileName>gameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="game_framework_2.keyBoard" BaseTypeListCollapsed="true">
-    <Position X="4" Y="7" Width="1.5" />
+  <Class Name="game_framework_2.keyBoard" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAACAAAAAAAAAAAAIAAAAkAAAAgAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAACAACAAAAAAAAAAAAIAAAAkAAAAgAAgQA=</HashCode>
       <FileName>keyBoard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="game_framework_2.movedown" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="7" Width="1.5" />
+    <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>movedown.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="game_framework_2.moveleft" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6" Y="7" Width="1.5" />
+    <Position X="2.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>moveleft.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="game_framework_2.moveright" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="7" Width="1.5" />
+    <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>moveright.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="game_framework_2.moveup" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="7" Width="1.5" />
+    <Position X="5.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>moveup.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="game_framework_2.Imovement" Collapsed="true">
-    <Position X="4" Y="5.25" Width="1.5" />
+  <Interface Name="game_framework_2.Iaction">
+    <Position X="11.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>action.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="game_framework_2.Imovement" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>movement.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="game_framework_2.char_types">
-    <Position X="0.5" Y="2.75" Width="1.5" />
+  <Enum Name="game_framework_2.char_types" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>char_types.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="game_framework_2.MoveTypes" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAACAAAAAAAAAAAAAAAIAAAAAAAAAgAAgAA=</HashCode>
+      <FileName>MoveTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

@@ -8,15 +8,13 @@ using System.Windows.Forms;
 namespace game_framework_2
 {
     public class factory
-    {
-        
+    {       
         int enemyCount, heroCount;
         ArrayList character_array = new ArrayList();
         factoryMovement fm = new factoryMovement();
 
         public gameObject makeGameObject(PictureBox pic,int speed, MoveTypes move,char_types types)
-        {
-            
+        {          
             gameObject gameObject=new gameObject(pic,speed,fm.getMovement(move),types);
             character_array.Add(types);
             
@@ -26,8 +24,7 @@ namespace game_framework_2
         public gameObject makeGameObject(PictureBox pic,int speed,char_types types)
         {
             character_array.Add(types);
-            gameObject gameObject = new gameObject(pic, speed,types);
-            
+            gameObject gameObject = new gameObject(pic, speed,types);            
             return gameObject;
         }
 

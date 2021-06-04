@@ -36,10 +36,13 @@ namespace game_framework_2
             this.hero1 = new System.Windows.Forms.PictureBox();
             this.characterCounters = new System.Windows.Forms.Label();
             this.hero2 = new System.Windows.Forms.PictureBox();
+            this.health_bar = new System.Windows.Forms.ProgressBar();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.enemy1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hero1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hero2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // enemy1
@@ -93,12 +96,25 @@ namespace game_framework_2
             this.hero2.TabIndex = 0;
             this.hero2.TabStop = false;
             // 
+            // health_bar
+            // 
+            this.health_bar.Location = new System.Drawing.Point(194, 4);
+            this.health_bar.Name = "health_bar";
+            this.health_bar.Size = new System.Drawing.Size(221, 18);
+            this.health_bar.TabIndex = 2;
+            this.health_bar.Value = 100;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.health_bar);
             this.Controls.Add(this.characterCounters);
             this.Controls.Add(this.hero1);
             this.Controls.Add(this.enemy2);
@@ -113,6 +129,7 @@ namespace game_framework_2
             ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hero1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hero2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +143,8 @@ namespace game_framework_2
         private System.Windows.Forms.PictureBox hero1;
         private System.Windows.Forms.Label characterCounters;
         private System.Windows.Forms.PictureBox hero2;
+        private System.Windows.Forms.ProgressBar health_bar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

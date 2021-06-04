@@ -13,6 +13,8 @@ namespace game_framework_2
     {
  
         public static ArrayList stored = new ArrayList();
+        ArrayList collosion_list = new ArrayList();
+        gameObject g = new gameObject();
         private game()
         {
         }
@@ -29,13 +31,24 @@ namespace game_framework_2
         {
             stored.Add(objs);
         }
-        public void update()
+        public void addCollosion(CollosionDetection cd)
         {
-            gameObject g = new gameObject();
+            collosion_list.Add(cd);
+        }
+
+        public void update()
+        {           
             foreach(gameObject go in stored)
             {
                 g.fall(go);
             }
-        }       
+        }   
+        public void impact()
+        {
+            foreach(CollosionDetection c in collosion_list)
+            {
+                c.collosionUpdate(stored);
+            }
+        }
     }
 }

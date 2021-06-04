@@ -49,7 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="action.cs" />
     <Compile Include="char_types.cs" />
+    <Compile Include="CollosionDetection.cs" />
+    <Compile Include="decreaseHP.cs" />
     <Compile Include="factory.cs" />
     <Compile Include="factoryMovement.cs" />
     <Compile Include="Form1.cs">

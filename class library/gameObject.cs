@@ -11,10 +11,10 @@ namespace game_framework_2
 {
     public class gameObject
     {
-        PictureBox box;
+        public PictureBox box;
         int speed;
         Imovement move;
-        char_types types;
+        public char_types types;
         internal gameObject(PictureBox pic,int speed,Imovement movement,char_types types)
         {
             this.box = pic;
@@ -54,6 +54,7 @@ namespace game_framework_2
                 left.move(speed, pic);
             }
             
-        } 
+        }
+
     }
 }

@@ -28,7 +28,6 @@ namespace game_framework_2
 
         game g;
         factory f = new factory();
-        factoryMovement fm = new factoryMovement();
 
         public Form1()
         {
@@ -38,19 +37,24 @@ namespace game_framework_2
         {
             g.update();
             characterCounter_update();
+            g.impact();
         }
         private void Form1_Load_1(object sender, EventArgs e)
         {
             g = game.getInstance();
-            gameObject obj1 = f.makeGameObject(enemy1, 2, MoveTypes.left, char_types.enemy);
-            gameObject obj2 = f.makeGameObject(enemy2, 3, char_types.enemy);
+            gameObject obj1 = f.makeGameObject(enemy1, 1, MoveTypes.left, char_types.enemy);
+            gameObject obj2 = f.makeGameObject(enemy2, 1, char_types.enemy);
             gameObject obj3 = f.makeGameObject(hero1, 4, MoveTypes.keyboard, char_types.hero);
+            gameObject obj4 = f.makeGameObject(hero2, 2, MoveTypes.up, char_types.enemy);
 
-            gameObject obj4 = f.makeGameObject(hero2, 8, MoveTypes.up, char_types.hero);
+            CollosionDetection cd1 = new CollosionDetection(char_types.enemy, char_types.hero,new decreaseHP(health_bar,2));
+            
             g.addObject(obj1); //sending objects to be stored in array
             g.addObject(obj2);
             g.addObject(obj3);
             g.addObject(obj4);
+
+            g.addCollosion(cd1);
 
             f.calculate_charac_types();     //calculte enemies and heroes at this moment
            
@@ -71,6 +75,5 @@ namespace game_framework_2
         {            
             characterCounters.Text = "Enemies:" + f.getEnemies() + " Heroes:" +f.getHeroes();
         }
-       
     }
 }
